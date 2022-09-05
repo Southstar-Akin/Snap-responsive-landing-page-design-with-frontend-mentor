@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/main/style.css">
+  <script src="index.js" async></script>
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: blue; }
+  </style>
+</head>
+<body class=" bg-AlmostWhite p-0 m-0 grid h-[100vh] grid-rows-[1fr_9fr] sm:grid">
+  <header class="grid grid-flow-col grid-cols-[1fr_9fr] grid-rows-1 mt-[1.3rem] 
+  ml-[2rem] mb-[2rem] mr-[0rem] h-[25%] box-border sm:grid sm:grid-cols-2">
+    <div class="grid">
+     <img src="/images/logo.svg" alt="Logo" srcset="">
+    </div>
+    <div class=" justify-items-end hidden sm:grid col-start-2 col-end-3">
+      <img src="/images/icon-menu.svg" alt="menu" srcset="" class="mr-6" id="menu">
+    </div>
+<div class="md:grid md:grid-rows-1 md:grid-cols-[6fr_2fr]  
+sm:col-start-2 sm:col-end-3 sm:grid-rows-[0.1fr_0.3fr_0.3fr] sm:grid-col-1
+ sm:bg-white sm:h-[120vh]
+ sm:absolute sm:top-0 sm:right-0 sm:hidden" id="sha">
+ <div class="hidden sm:grid sm:justify-items-end ">
+<img src="/images/icon-close-menu.svg" alt="" id="close" class="sm:mt-6 mr-6">
+ </div>
+  <div class=" grid mx-[2vw] p-0 text-sm font-semibold text-MediumGray 
+  sm:grid sm:mt-6">  
+    <nav class=" m-0 w-full grid max-w-[402.45px] sm:grid">
+      <ul class="flex list-none items-start justify-evenly m-0 p-0 sm:grid
+      sm:grid-flow-row sm:justify-start sm:ml-6 sm:gap-y-3">
+        <li id="feat">Features</li>
+        <div>
+        <ul id="drop1" class="bg-[#ffffff] md:absolute md:top-[50px] md:left-[130px] shadow-2xl rounded-2xl hidden sm:shadow-none">
+          <li>Todo List</li>
+          <li>Calender</li>
+          <li>Reminders</li>
+          <li>Planning</li>
+        </ul>
+      </div>
+        <li class="z-10" id="comp">Company</li>
+        <div >
+        <ul id="drop2" class="bg-[#ffffff] shadow-2xl rounded-2xl m-0 md:absolute md:top-[50px] md:left-[23vw] hidden sm:shadow-none">
+          <li>History</li>
+          <li>Our Team</li>
+          <li>Blog</li>
+        </ul>
+      </div>
+        <li class="mb-2">Careers</li>
+        <li>About</li>
+      </ul>
+    </nav>
+  </div>
+  
+   <div class="grid md:grid-cols-2 md:grid-rows-1 w-[222.25px] font-bold text-AlmostBlack md:justify-end ml-[1.5rem] gap-x-1 my-0 
+    sm:grid sm:grid-cols-1 sm:grid-row-2 sm:h-[90px] sm:mt-4 "> 
+   <div class=" hover:border-[2px] hover:border-MediumGray text-center rounded-xl  border-[2px] border-transparent transition-all cursor-pointer md:px-4  md:py-5 grid place-content-center
+   sm:p-0 sm:grid sm:mx-4 sm:h-[45px] sm:text-MediumGray sm:hover:text-AlmostBlack">Login</div> 
+   <div class=" hover:border-[2px] hover:border-MediumGray text-center rounded-xl border-[2px] border-transparent transition-all cursor-pointer md:px-4 md:py-5 grid place-content-center
+   sm:p-0 sm:grid sm:mx-4 sm:h-[45px] sm:text-MediumGray sm:hover:text-AlmostBlack">Register</div> 
+      
+  </div>
+  </div>
+  </header>
+<main class="grid grid-cols-[1fr_1fr] grid-rows-1 sm:grid sm:grid-rows-[0.5fr_1fr] sm:grid-cols-1">
+  <div class="grid mx-[8vw] sm:grid">
+<p class="grid items-center font-[1000] text-[4.35rem] gap-y-0 leading-none sm:text-[2rem] sm:font-[900] sm:items-end"> Make remote work </p>
+
+ <p class="grid items-start sm:items-end sm:text-center sm:mx-[1vw]"> Get your team in sync, no matter your location. Streamline processes, 
+  create team rituals, and watch productivity soar.
+</p>
+<div class="grid sm:justify-items-center sm:my-2 md:justify-start">
+ <button class="grid  md:py-3 md:px-6 rounded-xl bg-AlmostBlack text-white font-semibold m-0
+  hover:bg-white hover:text-AlmostBlack sm:p-0 place-content-center sm:h-[45px] sm:px-6 md:h-12 md:justify-start">Learn more</button>
+</div>
+<div class="grid grid-flow-col sm:gap-x-4">
+  <img src="/images/client-databiz.svg" alt="" srcset="">
+  <img src="/images/client-audiophile.svg" alt="" srcset="">
+  <img src="/images/client-meet.svg" alt="" srcset="">
+  <img src="/images/client-maker.svg" alt="" srcset="">
+</div>
+</div>
+<div class="grid items-start justify-self-center sm:grid sm:row-start-1 sm:row-end-2 sm:h-[45vh] sm:mb-3">
+  <picture>
+    <source media="(max-width: 640px)" srcset="/images/image-hero-mobile.png ">
+    <img src="/images/image-hero-desktop.png" alt="Picture" class="h-[70vh] sm:h-[45vh] ">
+  </picture>
+</div>
+</main>
+  <div class="attribution my-5">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://twitter.com/akinbiletony" target="_blank">Akinbile Oluwaseyi Tony</a>.
+  </div> 
+</body>
+</html>

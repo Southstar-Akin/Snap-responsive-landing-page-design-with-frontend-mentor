@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face{
+  font-family: 'Epilogue';
+  src: url('/Epilogue-VariableFont_wght.ttf');
+}
+
+*{
+@apply font-epilogue
+}
+
+nav ul li:first-child,nav ul li:nth-child(3){
+  @apply after:content-arrowDown after:ml-1 hover:after:content-arrowUp transition-all sm:after:ml-3
+}
+nav ul li{
+  @apply hover:text-AlmostBlack hover:font-bold transition-all cursor-pointer sm:text-lg
+}
+ul#drop1 li{
+@apply after:content-none py-2 px-6 before:mr-3 hover:bg-gray-100
+}
+ul#drop2 li{
+  @apply after:content-none py-2 px-6 first:rounded-t-2xl hover:bg-gray-100 last:rounded-b-2xl
+}
+ul#drop1 li:nth-child(1){
+@apply before:content-Todo rounded-t-2xl
+}
+ul#drop1 li:nth-child(2){
+@apply before:content-calendar
+}
+ul#drop1 li:nth-child(3){
+@apply before:content-Reminder
+}
+ul#drop1 li:nth-child(4){
+@apply before:content-Planning rounded-b-2xl
+}
